@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 #include<string.h>
-
+// ¼öÁ¤
 #define CHARNUM 8
 int main()
 {
