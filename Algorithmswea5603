@@ -1,0 +1,41 @@
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+//5603
+
+int main()
+{
+	int T;
+	scanf("%d",&T);
+	getchar();
+	for(int it=1;it<=T;++it)
+	{
+		int N,sum=0,move=0;
+		scanf("%d",&N);
+		getchar();
+		int* hay=(int*)malloc(sizeof(int)*N);
+		
+		for(int i=0;i<N;++i)
+		{
+			scanf("%d",&hay[i]);
+			getchar();
+			sum+=hay[i];
+			
+		}
+		int result=sum/N;
+		for(int i=0;i<N;++i)
+		{
+			if(hay[i]<result)
+			{
+				move+=(result-hay[i]);
+			}
+		}
+		
+		printf("#%d %d\n",it,move);
+		
+		
+	}
+
+	return 0;
+}
