@@ -35,7 +35,7 @@ int main()
 	int strsize = 0;
 	cin >> input;
 	strsize = input.size();
-	//0ÀÌ µé¾îÀÖ´ÂÁö, ÀÚ¸®¼ö ÇÕÀÌ 3ÀÇ ¹è¼öÀÎÁö
+	//0ì´ ë“¤ì–´ìˆëŠ”ì§€, ìë¦¬ìˆ˜ í•©ì´ 3ì˜ ë°°ìˆ˜ì¸ì§€
 	if (checknum(input) && checkThree(input))
 	{
 		int* arr = new int[strsize+1];
